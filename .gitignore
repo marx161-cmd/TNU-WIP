@@ -1,0 +1,100 @@
+# ----------------------------------------
+# Arch Linux packaging (PKGBUILD) artefacts
+# ----------------------------------------
+*.pkg.tar
+*.pkg.tar.*
+pkg/
+src/
+*.log
+*.log.*
+*.log.gz
+*.log.xz
+*.log.zst
+
+# Ignore .MTREE files
+*.mtree
+*.mtree.*
+
+# Ignore package signatures
+*.sig
+
+# Ignore pacman database
+*.db
+*.db.tar
+*.db.tar.*
+
+# Ignore pacman packages
+*.tar.xz
+*.tar.zst
+*.tar.gz
+
+# Ignore pacman download cache
+*.part
+
+# ----------------------------------------
+# Nix-specific artefacts
+# ----------------------------------------
+result
+result-*
+*.drv
+*.lock
+.nix-channels/
+.nix-defexpr/
+.nix-profile
+.nix-gcroots/
+.cache/nix/
+nix-shell-*
+/tmp/nix-build-*
+/tmp/nix-shell-*
+
+# Optional: ignore system-wide store symlink if present
+/nix
+
+# ----------------------------------------
+# Termux / Android-specific
+# ----------------------------------------
+*.deb
+*.apk
+*.obb
+.cache/
+termux.properties
+.bash_history
+.zsh_history
+.history
+
+# Some Termux apps store local config here
+.termux/
+.android/
+.storage/
+.local/
+
+# ----------------------------------------
+# Generic development / editor artefacts
+# ----------------------------------------
+# Environment files
+.env
+.env.*
+*.env
+
+# Swap & backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Editor config
+.idea/
+.vscode/
+*.code-workspace
+
+# Python bytecode if you ever use Python scripts
+__pycache__/
+*.py[cod]
