@@ -1,0 +1,61 @@
+# --- Nix artefacts ---
+result
+result-*
+*.drv
+*.lock
+.nix-channels/
+.nix-defexpr/
+.nix-profile/
+.nix-gcroots/
+.cache/nix/
+/tmp/nix-build-*
+/tmp/nix-shell-*
+.direnv/
+
+# --- Termux/Android clutter ---
+.termux/
+.android/
+.storage/
+.local/
+.cache/
+*.apk
+*.obb
+*.deb
+.bash_history
+.zsh_history
+.history
+
+# --- Keep repo clean of data & models ---
+# All models live outside Git; see README
+tagger_models/
+
+# Embeddings / sidecars / indexes (safety if you test inside repo)
+*.npy
+*.clip.json
+*.wd14.json
+*.tags.json
+*.json.tmp
+all_tags.jsonl
+
+# Images (avoid committing binaries)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+
+# --- Generic dev cruft ---
+.env
+.env.*
+*.env
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+*.code-workspace
+*~
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
